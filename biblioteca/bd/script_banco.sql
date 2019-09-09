@@ -91,17 +91,18 @@ create table endereco (
 	cep varchar (60) not null,
 	primary key(idendereco),
 	foreign key (id_cliente) references cliente (id_cliente) on delete cascade on update cascade );
-CREATE TABLE pedido(
-id_pedido INT(11)  unsigned auto_increment NOT NULL,
-id_cliente INT(11) unsigned NOT NULL,
-idendereco INT(11) unsigned NOT NULL,
-datacompra DATE NOT NULL,
-PRIMARY KEY(id_pedido),
-FOREIGN KEY (id_cliente) REFERENCES cliente (id_cliente)
-ON DELETE CASCADE ON UPDATE CASCADE,
-FOREIGN KEY (idendereco) REFERENCES endereco (idendereco)
-ON DELETE CASCADE ON UPDATE CASCADE
-);
+        
+        CREATE TABLE pedido(
+        id_pedido INT(11)  unsigned auto_increment NOT NULL,
+        id_cliente INT(11) unsigned NOT NULL,
+        idendereco INT(11) unsigned NOT NULL,
+        datacompra DATE NOT NULL,
+        PRIMARY KEY(id_pedido),
+        FOREIGN KEY (id_cliente) REFERENCES cliente (id_cliente)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+        FOREIGN KEY (idendereco) REFERENCES endereco (idendereco)
+        ON DELETE CASCADE ON UPDATE CASCADE
+        );
 
 
 

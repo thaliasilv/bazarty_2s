@@ -2,7 +2,7 @@
 <hr align="center" width="100%" size="1" color="orange">
 <div class="corpinho">
     <div class="caixinha">
-        <form action="" method="POST">
+        <form action="" method="POST" enctype="multipart/form-data">
             Nome: <br> <input type="text" name=" NomeProduto"><br><br>
             Categoria:<br> 
             <select name="CategoriaProduto">
@@ -13,7 +13,7 @@
             </select><br><br>
             Descrição:<br> <input type="text" name="DescriProduto"><br><br>
             Preço: <br> <input type="text" name="PreProduto"><br><br>
-            Imagem: <br><input type="img" name="imagem"><br><br>
+            Imagem: <br><input type="file" name="imagem"><br><br>
             Estoque mínimo:<br> <input type="number" name="eMin"><br><br>
             Estoque máximo:<br> <input type="number" name="eMax"><br><br><br><br>
             <button style="color: orange" type="submit">Enviar</button>
