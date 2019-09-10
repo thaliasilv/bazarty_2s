@@ -4,11 +4,11 @@
     <div class="caixinha">
         <?php foreach ($produtos as $produto): ?>
             <div class="product-box">
-                <div class="img-inside-box" style="max-width:277.563px;max-height: 264.200px">	
+                <div class="img-inside-box" style="max-width: 300px; max-height: 300px;">
                     <!--  style="max-width:277.563px;max-height: 264.200px" 
                          onMouseOver="this.src = 'publico/upload/<?=$produto["imagem"] ?>'" style="max-width:277.563px;max-height: 264.200px"
                          onMouseOut="this.src = 'publico/upload/<?= $produto["imagem"] ?>'"  style="max-width:277.563px;max-height: 264.200px" -->
-                    <img src="<?=$produto["imagem"]?>" alt="Imagem"
+                    <img src="<?=$produto["imagem"]?>" alt="Imagem" style="width:270px; height: 250px; max-width:277.563px;max-height: 264.200px;"
                          onClick="location = 'produto/ver/<?= $produto["id_produto"] ?>'">
                 </div>
                 <div class="details" style="width: 100%; ">
